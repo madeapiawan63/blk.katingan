@@ -1,0 +1,123 @@
+/* style2.css */
+
+/* Import Font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0056b3 0%, #00aaff 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    margin-bottom: -50px;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Card Artikel */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #ffffff;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Judul dan Teks */
+h2.text-primary {
+    color: #0056b3 !important;
+    font-weight: 700;
+}
+
+.deadline-box {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #d9534f;
+}
+
+/* Styling List Syarat */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    background: #e8f5e9;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+/* Tombol Daftar */
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+}
+
+/* Background Highlight Area */
+.bg-light {
+    background-color: #f8f9fa !important;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a !important;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        clip-path: none;
+    }
+    
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi | BLK Kabupaten Katingan</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #003366;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area span {
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            margin-bottom: 40px;
+        }
+
+        .header-title h1 {
+            color: #003366;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header-title div {
+            width: 80px;
+            height: 4px;
+            background: #2e7d32;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Image Styling */
+        .image-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 100%;
+            max-width: 900px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .struktur-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: zoom-in;
+            border: 1px solid #eee;
+        }
+
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #003366;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #002244;
+            box-shadow: 0 5px 15px rgba(0,51,102,0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #003366;
+            color: #003366;
+        }
+
+        .btn-outline:hover {
+            background: #003366;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .header-title h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <i class="fa-solid fa-sitemap fa-lg"></i>
+            <span>BLK KATINGAN</span>
+        </div>
+         <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="struktur.html">Struktur</a></li>
+            </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header-title">
+            <h1>Struktur Organisasi</h1>
+            <p>UPT Balai Latihan Kerja Kabupaten Katingan</p>
+            <div></div>
+        </div>
+
+        <div class="image-card">
+            <a href="img/Hijau dan Putih Modern Sidang Skripsi Presentation.jpg" target="_blank">
+                <img src="img/struktur.jpg" 
+                     alt="Bagan Struktur Organisasi BLK" 
+                     class="struktur-img">
+            </a>
+        </div>
+
+    <footer>
+        <p>&copy; 2026 UPT Balai Latihan Kerja Kabupaten Katingan.</p>
+        <p>Dinas Perindustrian, Transmigrasi dan Tenaga Kerja.</p>
+    </footer>
+
+</body>
+</html>

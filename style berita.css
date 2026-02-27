@@ -1,0 +1,8 @@
+ <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+                        background-size: cover; color: white; padding: 60px 0; text-align: center; }
+        .deadline-box { background-color: #dc3545; color: white; padding: 10px; border-radius: 5px; display: inline-block; font-weight: bold; }
+        .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
